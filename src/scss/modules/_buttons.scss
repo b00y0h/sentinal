@@ -1,0 +1,56 @@
+.btn {
+    // @include size(90%, auto);
+  font-size: 2em;
+  font-family: $button-font-family;
+  padding:.2em 1em;
+  text-align:center;
+  // @extend .uppercase;
+  @extend .display-inline-block;
+  @extend .text-shadow-dark;
+  &:hover {
+    text-decoration:none;
+  }
+  &.light-blue-gradient {
+    &:hover, &.light-blue-gradient.hover {
+    background-color:$blueLighter;
+    color:white;
+    @include gradient-vertical(darken($blueLighter,10),darken(#73bbf8,20));
+    }
+    &:active {
+      @include gradient-vertical(darken(#73bbf8,20),darken($blueLighter,10));
+    }
+  }
+  &.medium-blue-gradient {
+    &:hover, &.medium-blue-gradient.hover {
+    background-color:$blueLight;
+    color:white;
+    @include gradient-vertical(darken($blueLight, 10), darken(#1d61d7, 20));
+    }
+    &:active {
+      @include gradient-vertical(darken(#1d61d7, 20),darken($blueLight, 10));
+    }
+  }
+  &.blue-gradient {
+    &:hover, &.blue-gradient.hover {
+    background-color:$blueDarker;
+    color:white;
+    @include gradient-vertical(darken($blueDarker,5),darken(#05203e,15));
+    }
+    &:active {
+      @include gradient-vertical(darken(#05203e,15),darken($blueDarker,5));
+    }
+  }
+  &:visited {
+    color:$white;
+  }
+  &:active {
+    box-shadow: inset 0 1px 5px rgba(0,0,0,.5);
+  }
+}
+.rounded {
+  border-radius:37px;
+}
+
+.btn-hold {
+  text-align: center;
+}

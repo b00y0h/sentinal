@@ -1,0 +1,7 @@
+h1 {
+    @include font-shorthand(53px, normal, 34px);
+    color:#0093E4;
+    font-family: $button-font-family;
+    text-align: center;
+    line-height: $base-line-height;
+}

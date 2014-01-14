@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html,body {
+	margin: 0;
+	padding:0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  color: #444;
+}
+
+
+.uppercase {
+  text-transform:uppercase;
+}
+.text-shadow-dark {
+  text-shadow:1px 0 5px rgba(0,0,0,.35);
+}
+
+
+
+.gradient a {
+  color:$white;
+}
+.red-gradient {
+  background-color:$red;
+  color:white;
+  @include gradient-vertical($red, #9c0c0a);
+}
+.light-red-gradient {
+  background-color:$redLight;
+  color:$white;
+  @include gradient-vertical($redLight, #c91211);
+}
+.light-blue-gradient {
+  background-color:$blueLighter;
+  color:white;
+  @include gradient-vertical($blueLighter,#73bbf8);
+}
+.medium-blue-gradient {
+  background-color:$blueLight;
+  color:white;
+  @include gradient-vertical($blueLight,#1d61d7);
+}
+.blue-gradient {
+  background-color:$blueDarker;
+  color:white;
+  @include gradient-vertical($blueDarker,#05203e);
+}
+.orange-gradient {
+  background-color:$orange;
+  color:white;
+  @include gradient-vertical($orange,#f54a18);
+}
+.dark-gray-gradient {
+  background-color:#727272;
+  color:$white;
+  @include gradient-vertical(#727272,#555555);
+}
+.light-gray-gradient {
+  background-color:#dfdfdf;
+  color:$white;
+  @include gradient-vertical(#ededed,#d1d1d1);
+}

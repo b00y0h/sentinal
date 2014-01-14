@@ -1,0 +1,43 @@
+// Typography Settings
+
+$baseline-rhythm: 5px !default;
+$base-font-size: 16px !default;
+$base-line-height: $baseline-rhythm * 4 !default;
+
+$base-font-family: Georgia, serif !default;
+$alternate-font-family: "Helvetica Neue", Arial, sans-serif !default;
+$mono-font-family: Consolas, "Andale Mono", "Lucida Console", monospace !default;
+
+$link-color: #ff6600 !default;
+$link-hover-color: #ff3300 !default;
+
+$base-text-color: #333333 !default;
+$strong-text-color: black !default;
+$weak-text-color: #999999 !default;
+$header-color: #666666 !default;
+$blockquote-color: #666666 !default;
+
+$extra-light-screen-color: #f9f9f9 !default;
+$light-rule-color: #dfdfdf !default;
+
+
+// ========================================
+// = Messaging Background and Text Colors =
+// ========================================
+
+$defaulBackground: #696969 !default;
+$successBackground: #40a140 !default;
+$errorBackground: #da2222 !default;
+$warningBackground: #e7c202 !default;
+$infoBackground: #3386af !default;
+
+$defaultText: #fff !default;
+$successText: #fff !default;
+$errorText: #fff !default;
+$warningText: #fff !default;
+$infoText: #fff !default;
+
+// =================
+// = Miscellaneous =
+// =================
+$boxmodel: border-box !default;

@@ -1,0 +1,72 @@
+// Box sizing
+.border-box {
+  @include box-sizing(border-box); }
+
+.content-box {
+  @include box-sizing(content-box); }
+
+// Display
+.display-none {
+  display: none; }
+
+.display-block {
+  display: block; }
+
+.display-inline {
+  display: inline; }
+
+.display-inline-block {
+  @include inline-block; }
+
+// Position
+.position-relative {
+  position: relative; }
+
+.position-absolute {
+  position: absolute; }
+
+.position-fixed {
+  position: fixed; }
+
+.position-static {
+  position: static; }
+
+// Float
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.float-none {
+  float: none; }
+
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// Visibility
+.invisible {
+  visibility: hidden;
+}
+
+
+
+// Margins and padding
+.no-margin {
+  margin: 0; }
+
+.no-padding {
+  padding: 0; }
+
+.no-margin-or-padding {
+  @extend .no-margin;
+  @extend .no-padding; }
+
+// Lists
+.no-bullets {
+  list-style-type: none; }

@@ -1,0 +1,40 @@
+//Find mistakes in HTML and highlight the crap out of them
+/* Empty Elements */
+div:empty, span:empty, li:empty, p:empty, td:empty, th:empty
+{ padding: 20px; border: 5px dotted yellow !important; }
+
+/* Empty Attributes */
+*[alt=""], *[title=""], *[class=""], *[id=""], a[href=""], a[href="#"], img:not([alt]), img:not([title])
+{ border: 5px solid yellow !important; background: red!important; color: white!important; font-size: x-large!important; }
+
+/* Deprecated Elements */
+applet, basefont, center, dir, font, isindex, menu, s, strike, u
+{ border: 5px dotted red !important; }
+
+/* Deprecated Attributes */
+*[background], *[bgcolor], *[clear], *[color], *[compact], *[noshade], *[nowrap], *[size], *[start],
+*[bottommargin], *[leftmargin], *[rightmargin], *[topmargin], *[marginheight], *[marginwidth], *[alink], *[link], *[text], *[vlink],
+*[align], *[valign],
+*[hspace], *[vspace],
+*[height], *[width],
+ul[type], ol[type], li[type]
+{ border: 5px solid red !important; }
+
+/* Proposed Deprecated Elements */
+input[type="button"], big, tt
+{ border: 5px dotted #33FF00 !important; }
+
+/* Proposed Deprecated Attributes */
+*[border], a[target], table[cellpadding], table[cellspacing], *[name]
+{ border: 5px solid #33FF00 !important; }
+
+
+a[href]:not([title]), img:not([title]) {
+  border: 5px solid red;
+  &:after {
+    content: "No title";
+  }
+  }
+a[title=""] {outline: 3px dotted red;}
+a[href="#"] {background: lime;}
+a[href=""] {background: fuchsia;}

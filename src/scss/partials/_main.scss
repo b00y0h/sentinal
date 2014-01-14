@@ -1,0 +1,29 @@
+form {
+  text-align: center;
+}
+.full, input {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  outline: none;
+  border-top: 1px solid $black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.main {
+  max-width: 600px;
+  margin:0 auto;
+  padding: 1em 5%;
+  background: #EBEBEB;
+}
+
+  .inline-two {
+    @extend .clearfix;
+}
