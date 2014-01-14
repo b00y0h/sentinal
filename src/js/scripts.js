@@ -2,6 +2,8 @@
 
   'use strict';
 
-  $(function() {});
+  $(function() {
+    $('input').placeholder();
+  });
 
 })(jQuery, window, document);
