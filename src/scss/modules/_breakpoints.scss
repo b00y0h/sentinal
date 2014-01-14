@@ -2,7 +2,7 @@
 	.and {display:none;}
 	h1 {
     @include font-shorthand(40px, normal, $base-line-height);
-        margin-top: 15px;
+        margin-top: 0;
 
 	}
 }
@@ -21,7 +21,10 @@
 	    @include font-shorthand(53px, normal, $base-line-height);
         margin-top: 25px;
 	}
-
+	.header {
+		padding-top: 4em;
+		padding-bottom: 1.8em;
+	}
 }
 @media only screen and (min-width:1024px) {
 
