@@ -1,5 +1,10 @@
 @media only screen and (min-width:320px) {
 	.and {display:none;}
+	h1 {
+    @include font-shorthand(40px, normal, $base-line-height);
+        margin-top: 15px;
+
+	}
 }
 @media only screen and (min-width:480px) {
 
@@ -12,6 +17,11 @@
 	  .first-of-two {float:left;}
 	  .last-of-two {float:right;}
 	}
+	h1 {
+	    @include font-shorthand(53px, normal, $base-line-height);
+        margin-top: 25px;
+	}
+
 }
 @media only screen and (min-width:1024px) {
 
