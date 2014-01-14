@@ -18,7 +18,8 @@ hr {
 }
 
 .main {
-  max-width: 600px;
+  box-sizing: content-box;
+  max-width: 610px;
   margin:0 auto;
   padding: 1em 5%;
   background: #EBEBEB;
